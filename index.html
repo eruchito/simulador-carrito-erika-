@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <h2>Tienda en Línea</h2>
+
+    <!-- Formulario de Registro -->
+    <div id="registro">
+      <h3>Registro de Usuario</h3>
+      <input type="text" id="nombreUsuario" placeholder="Nombre de Usuario">
+      <input type="password" id="contrasenaUsuario" placeholder="Contraseña">
+      <button onclick="registrarUsuario()">Registrarse</button>
+    </div>
+    
+    <!-- Listado de Productos -->
+    <div id="productos">
+      <h3>Productos</h3>
+      <!-- Los productos se cargarán aquí con JavaScript -->
+    </div>
+    
+    <!-- Carrito de Compras -->
+    <div id="carrito">
+      <h3>Carrito de Compras</h3>
+      <ul id="listaCarrito">
+        <!-- Los ítems del carrito se listarán aquí -->
+      </ul>
+      <p>Total: $<span id="totalCarrito">0.00</span></p>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div> 
+</body>
+</html>
+<script src="index.js"></script>
+<script src="db.js"></script>
