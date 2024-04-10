@@ -1,0 +1,285 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+
+/* Estilos para el encabezado */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff6600;
+}
+
+/* Estilos para los formularios */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Estilos para la sección de la tienda en línea */
+#productos {
+    text-align: center;
+    margin-top: 40px; /* Ajusta el margen superior según sea necesario */
+}
+
+.producto {
+    display: inline-block;
+    width: calc(33.33% - 20px); /* Para tener tres productos por fila */
+    margin: 20px 10px; /* Espacio entre los productos */
+    vertical-align: top; /* Alinea los productos desde la parte superior */
+    text-align: left; /* Alinea el contenido del producto a la izquierda */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total del elemento */
+    position: relative; /* Para permitir el posicionamiento absoluto del contenido desplegable */
+    overflow: hidden; /* Oculta el contenido que se desplegará */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.producto:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+.producto .descripcion {
+    padding: 10px;
+}
+
+.producto h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.producto p {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.producto .cantidad {
+    display: inline-block;
+    width: 40px;
+    padding: 5px;
+    font-size: 14px;
+}
+.producto input[type="number"] {
+    width: 40px; /* Ancho del campo de entrada para la cantidad */
+    margin-top: 10px; /* Espacio superior para el campo de entrada */
+}
+
+.producto button {
+    display: block; /* Convertir el botón en un bloque para ocupar todo el ancho */
+    width: 100%; /* Ancho completo del botón */
+    margin-top: 10px; /* Espacio superior para el botón */
+    padding: 10px; /* Relleno del botón */
+    background-color: #ff6600; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 14px; /* Tamaño de fuente del botón */
+    border: none; /* Quitar el borde del botón */
+    border-radius: 5px; /* Radio de borde del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.producto button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #ff8533;
+}
+
+/* Estilos para el carrito de compras */
+#carrito {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#carrito h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#listaCarrito {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaCarrito li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#listaCarrito li:last-child {
+    border-bottom: none;
+}
+
+#listaCarrito li button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#listaCarrito li button:hover {
+    background-color: #ff8533;
+}
+
+#totalCarrito {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+#finalizarCompra {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#finalizarCompra:hover {
+    background-color: #555;
+}
