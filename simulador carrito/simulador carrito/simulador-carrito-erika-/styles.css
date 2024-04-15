@@ -1,0 +1,456 @@
+/* video */
+.navbar {
+    position: relative;
+    height: 900px; /* Ajusta la altura de tu navbar según sea necesario */
+    overflow: hidden;
+}
+
+.navbar video {
+    position: absolute;
+    top: 50%; /* Posiciona el video en la mitad superior de la navbar */
+    left: 50%; /* Posiciona el video en el centro horizontal de la navbar */
+    transform: translate(-50%, -50%); /* Centra el video */
+    min-width: 50%; /* Ajusta el ancho mínimo del video */
+    min-height: 50%; /* Ajusta la altura mínima del video */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+/* Estilos para los botones de seleccionar categoría */
+#categoria {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Estilos para los botones de crear cuenta e iniciar sesión */
+#btn-crear-cuenta,
+#btn-iniciar-sesion {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn-crear-cuenta {
+    background-color: #ff66cc; /* Color de fondo rosado */
+    color: white;
+}
+
+#btn-crear-cuenta:hover {
+    background-color: #fa9fdc;
+}
+
+#btn-iniciar-sesion {
+    background-color: #ff66cc; /* Color de fondo rosado */
+    color: white;
+}
+
+#btn-iniciar-sesion:hover {
+    background-color: #fa9fdc;
+}
+
+/* Estilos para el botón de finalizar compra */
+#finalizarCompra {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff66cc; /* Color de fondo rosado */
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos cuando se pasa el cursor sobre los botones */
+#btn-crear-cuenta:hover,
+#btn-iniciar-sesion:hover,
+#finalizarCompra:hover {
+    opacity: 0.8;
+}
+  
+  /* Estilos para el botón de finalizar compra */
+  #finalizarCompra {
+    margin-top: 10px; /* Espaciado superior */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Quita el borde */
+    border-radius: 4px; /* Borde redondeado */
+    background-color: #ff66cc; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  #finalizarCompra:hover {
+    background-color: #fa9fdc;
+}
+
+  /* Estilos cuando se pasa el cursor sobre el botón de finalizar compra */
+  #finalizarCompra:hover {
+    opacity: 0.8; /* Reducir la opacidad al pasar el cursor */
+  }
+
+/* Estilos para el encabezado */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos dentro del contenedor */
+    margin-bottom: 20px;
+}
+
+#buscador {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    /* Ajusta el margen derecho para separar el selector de categorías */
+    transition: border-color 0.3s ease;
+}
+
+#buscador:focus {
+    border-color: #6c63ff;
+}
+
+#categoria {
+    width: 150px;
+    /* Ajusta el ancho según tu preferencia */
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+}
+
+#categoria:hover {
+    border-color: #6c63ff;
+}
+
+.logo img {
+    width: 100px;
+    /* ajusta el ancho según lo necesites */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    display: inline-block;
+    /* Hacer el logo en línea con el texto */
+    margin-right: 20px;
+    /* Margen derecho para separarlo del buscador */
+    max-width: 100px;
+    /* Ancho máximo del logo */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: ff66cc;
+}
+
+/* Estilos para los formularios */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #ffd3f0;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff66cc;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fa9fdc;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Estilos para la sección de la tienda en línea */
+#productos {
+    text-align: center;
+    margin-top: 40px;
+    /* Ajusta el margen superior según sea necesario */
+}
+
+.producto {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    /* Para tener tres productos por fila */
+    margin: 20px 10px;
+    /* Espacio entre los productos */
+    vertical-align: top;
+    /* Alinea los productos desde la parte superior */
+    text-align: left;
+    /* Alinea el contenido del producto a la izquierda */
+    box-sizing: border-box;
+    /* Incluye el borde y el relleno en el tamaño total del elemento */
+    position: relative;
+    /* Para permitir el posicionamiento absoluto del contenido desplegable */
+    overflow: hidden;
+    /* Oculta el contenido que se desplegará */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.producto:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para las imágenes de los productos */
+.producto img {
+    max-width: 200px;
+    /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+    display: block;
+    /* Para centrar la imagen */
+    margin: 0 auto;
+    /* Centra horizontalmente la imagen */
+    margin-bottom: 10px;
+    /* Agrega un espacio entre la imagen y los demás elementos */
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+.producto .descripcion {
+    padding: 10px;
+}
+
+.producto h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.producto p {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.producto .cantidad {
+    display: inline-block;
+    width: 40px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.producto input[type="number"] {
+    width: 40px;
+    /* Ancho del campo de entrada para la cantidad */
+    margin-top: 10px;
+    /* Espacio superior para el campo de entrada */
+}
+
+.producto button {
+    display: block;
+    /* Convertir el botón en un bloque para ocupar todo el ancho */
+    width: 100%;
+    /* Ancho completo del botón */
+    margin-top: 10px;
+    /* Espacio superior para el botón */
+    padding: 10px;
+    /* Relleno del botón */
+    background-color: ff66cc;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    font-size: 14px;
+    /* Tamaño de fuente del botón */
+    border: none;
+    /* Quitar el borde del botón */
+    border-radius: 5px;
+    /* Radio de borde del botón */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease;
+    /* Transición suave para el color de fondo */
+}
+
+.producto button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff66cc;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #fa9fdc;
+}
+
+
+/* Estilos para el carrito de compras */
+#carrito {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#carrito h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#listaCarrito {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaCarrito li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#listaCarrito li:last-child {
+    border-bottom: none;
+}
+
+#listaCarrito li button {
+    background-color: #ff66cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#listaCarrito li button:hover {
+    background-color: #fa9fdc;
+}
+
+
+#totalCarrito {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+#finalizarCompra {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#finalizarCompra:hover {
+    background-color: #555;
+}
